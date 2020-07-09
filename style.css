@@ -1,0 +1,488 @@
+@charset "UTF-8";
+
+:root {
+  --main-color: #5D9AB2;
+  --accent-color: #BF6A7A;
+  --dark-color: #2B5566;
+  --icon-color: black;
+  --icon-bk-color: gray;
+  --large-width: 1000px;
+}
+
+body {
+  font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.headA {
+  display: inline-block;
+  line-height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width:100%;
+  background-color: rgba(255,255,255,0.3);
+}
+@media (min-width:768px) {
+  header .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.headB ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.headB a {
+  display: block;
+  padding: 15px;
+  color:inherit;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.headB a:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+@media (min-width:768px) {
+  .headB ul {
+    display: flex;
+  }
+}
+
+@media (max-width:767px) {
+
+  header .container-small {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .headC {
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 28px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .headC a:hover {
+    opacity: 0.3;
+  }
+
+  .headB {
+    display: none;
+  }
+}
+
+@media(min-width:768px) {
+  .headC {
+    display: none;
+  }
+
+  .headB {
+    display: block !important;
+  }
+}
+
+.conA {
+  height: 100vh;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('main.jpg');
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.conA img {
+  width:20%;
+}
+.conA h1 {
+  margin-top:0;
+  margin-bottom: 10px;
+  font-size: 3vw;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  margin-left: 0.1em;
+}
+
+.conA p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.conA a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: solid 2px currentcolor;
+  border-radius: 6px;
+  background-color:#50bcdf;
+  color: white;
+  text-decoration: none;
+}
+
+.conA a:hover {
+  background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.3));
+}
+
+
+.conB h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.conB p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.conB a {
+  text-decoration: none;
+  color:purple;
+}
+
+.conB a:hover {
+  text-decoration: underline;
+  color:#50bcdf
+}
+
+.conB .icon {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 40px;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  background-color: gray;
+  color:black;
+}
+
+.conB .text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.conB .container {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.conC {
+  background-color:  #005666;
+  color:white;
+}
+.conC h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size:20
+}
+
+.conC p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.conC a {
+  display:inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: solid 3px currentcolor;
+  border-radius: 6px;
+  background-color: #BF6A7A;
+  color:white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.conC a:hover {
+  background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+}
+
+.conC .photo {
+  min-height: 200px;
+  background-image: url('img/lol.jpg');
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.conD {
+  background-image: url('img/memory.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.conD .text {
+  padding:20px;
+  background-color: rgba(255,255,255,0.5);
+}
+.conD h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size:20px;
+}
+
+.conD p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.conD a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: solid 2px currentcolor;
+  border-radius: 6px;
+  background-color: #32cd32;
+  color:white;
+  font-size:14px;
+  text-decoration: none;
+  box-shadow: 0 0 0 1px #888;
+}
+
+.conD a:hover {
+  background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+}
+
+.conD .photo {
+  min-height: 200px;
+  background-image: none;
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  color:white;
+  background-color: black;
+}
+
+footer .container {
+  padding: 40px 20px;
+}
+
+.footA {
+  margin-bottom: 30px;
+}
+
+.footA h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+
+.footA p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.footA a {
+  color:inherit;
+  text-decoration: none;
+}
+
+.footB div {
+  margin-bottom: 20px;
+}
+
+.footB h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid currentcolor;
+  font-size: 14px;
+}
+
+.footB ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footB a {
+  display: block;
+  padding: 5px;
+  color:inherit;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footB a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.footC {
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footD {
+  margin-top: 20px;
+}
+
+.footD ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footD a {
+  display: block;
+  padding: 5px;
+  color:inherit;
+  font-size: 16px;
+  margin-right: 8px;
+  text-decoration: none;
+  border: solid 1px currentcolor;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.footD a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.footD ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width:768px) {
+  .footB {
+    display: flex;
+  }
+
+  .footB div {
+    flex:1;
+  }
+}
+
+@media (min-width:768px) {
+  .conC container {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .conC .photo {
+    margin: 0 50px;
+  }
+
+  .conC .text {
+    padding:50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .conA h1 {
+    font-size:35px;
+  }
+
+  .conA p {
+    font-size: 24px
+  }
+
+  .conB .container{
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .conB .text {
+    flex:1;
+  }
+}
+
+@media (min-width:768px) {
+  .conD .container {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .conD .photo {
+    flex:3;
+  }
+
+  .conD .text {
+    flex:2;
+    padding: 50px;
+  }
+
+  .footB div:not(:first-child) {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width:768px) {
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footA {
+      flex: 0 0 40%;
+    }
+
+  .footB {
+    flex:0 0 60%;
+  }
+  .footC {
+    flex: 0 0 100%;
+  }
+}
